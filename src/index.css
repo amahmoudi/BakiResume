@@ -1,0 +1,430 @@
+
+:root {
+  --main-bg-color: #3269a8;
+  --secondary-bg-color: #f5f3f0;
+  --main-bg-text-color: #383632;
+}
+
+* {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+  "Lucida Sans", Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+#headerClass {
+  height: 75px;
+  display: flex;
+  align-items: center;
+  background-color: var(--main-bg-color);
+}
+
+/* repositions and styles the top heading */
+#headerClass h1 {
+  font-size: 30px;
+  padding: 3px 15px 3px 20px;
+  color: var(--main-bg-text-color);
+  background-color: var(--secondary-bg-color);
+  border-left: none;
+  border-radius: 0 12px 12px 0;
+  margin: 0;
+}
+
+#headerClass section h2 {
+  font-size: 30px;
+  padding: 3px 15px 3px 20px;
+  color: var(--main-bg-text-color);
+  background-color: var(--secondary-bg-color);
+  border-left: none;
+  border-radius: 0 12px 12px 0;
+  margin: 0;
+}
+
+#navbar {
+  width: 100%;
+  float: left;
+  font-size: 20px;
+  background-color: var(--main-bg-color);
+  padding-bottom: 1px;
+  padding-left: 13px;
+}
+
+.nav {
+  float: left;
+  border-bottom: 0;
+}
+
+.nav-item {
+  display: inline-block;
+}
+
+.nav-link {
+  color: var(--main-bg-text-color);
+  text-decoration: none;
+  font-size: 60%;
+  padding: 7px 6px;
+}
+
+#title {
+  height: 75px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  border-bottom: solid #000000 1px;
+  border-top: solid #000000 1px;
+  background-color: rgb(55, 44, 44);
+}
+
+/* this code repositions and styles the heading that's layered over the title image */
+#title section {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background-color: var(--secondary-bg-color);
+  padding: 4px 20px 4px 10px;
+  color: var(--main-bg-text-color);
+  border-right: none;
+  border-radius: 12px 0 0 12px;
+}
+
+#title section h2 {
+  font-size: 18px;
+  margin: 0;
+  padding: 0;
+}
+
+/* decided to make a breakpoint for this because the subtitle was a little too long for smaller resolutions */
+@media only screen and (min-width: 400px) {
+  #title section h2 {
+    font-size: 24px;
+  }
+}
+
+/* used the calc function with width to produce a margin that looks decent through multiple breakpoints */
+.flex-container {
+  margin: 10px 20px 20px 20px;
+  width: calc(100% - 40px);
+}
+
+.content-header {
+  border-bottom: solid #08094d 4px;
+  font-size: 24px;
+  color: #08094d;
+}
+
+.content-section {
+  margin-top: 15px;
+}
+
+.logo {
+  height: 50px;
+}
+/* this code enables the p element to wrap around the image */
+#aboutMe article p {
+  text-align: justify;
+  margin: auto 0 auto 0;
+  color: #08094d;
+}
+
+#imgPerso {
+  height: 250px;
+  border: 3px solid transparent;
+  background-color: #08094d;
+  aspect-ratio: 3/4;
+}
+
+/* used the flex display property to help arrange my work cards */
+#work-card-container {
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  align-items: flex-start;
+}
+
+.work-card {
+  position: relative;
+  aspect-ratio: 7/3;
+}
+
+/* hover pseudo-class used to darken the work cards */
+.hover-container:hover,
+.repo-link:hover {
+  filter: brightness(50%);
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.big-card {
+  width: 100%;
+  flex: 0 0 100%;
+}
+
+.small-card {
+  /* this vertically spaces the work cards from each other */
+  margin-top: 10px;
+  /* this will be modified in a breakpoint later to produce smaller cards at higher resolutions */
+  flex: 0 0 100%;
+}
+
+.tech-div {
+  max-width: 75%;
+}
+
+/* repositions and styles the headings to layer them on top of the cards */
+.deployed-link {
+  display: block;
+  border: 3px solid #08094d;
+}
+
+.deployed-link-header {
+  position: absolute;
+  display: inline-block;
+  top: 15%;
+  left: 0;
+  padding: 5px;
+  background-color: #08094d;
+  color: var(--main-bg-text-color);
+  font-size: 12px;
+  padding-left: 7px;
+  margin: 0;
+  border-radius: 0 4px 4px 0;
+}
+
+.repo-link {
+  position: absolute;
+  bottom: 40%;
+  right: 0;
+  padding: 5px;
+  background-color: #08094d;
+  color: var(--main-bg-text-color);
+  box-sizing: border-box;
+  text-decoration: none;
+  border-radius: 4px 0 0 4px;
+}
+
+.repo-link h4 {
+  font-size: 10px;
+  padding: 2px;
+  padding-right: 4px;
+  margin: 0;
+}
+
+.work-card h3 {
+  padding: 8px;
+  font-size: 15px;
+}
+
+.work-card h4 {
+  padding: 3px;
+  font-size: 12px;
+}
+
+.contact-anchor {
+  color: #08094d;
+  text-decoration: none;
+}
+
+.resume-link {
+  color: #08094d;
+}
+
+.footer {
+  background-color: #3269a8;
+  margin-top: 10px;
+  text-align: center;
+  padding: 20px;
+}
+
+.contact-link {
+  background-color: var(--main-bg-color);
+}
+
+.copyright {
+  background-color: #3269a8;
+}
+
+@media only screen and (min-width: 769px) {
+  /* increased size of header to reflect a larger viewport */
+  #headerClass {
+    height: 100px;
+  }
+
+  /* increase font size to reflect larger viewport */
+  #headerClass h1 {
+    font-size: 30px;
+  }
+  /* hides the nav bar background */
+  #navbar {
+    height: 0;
+    margin: 0;
+    padding: 0;
+    width: 0;
+  }
+
+  .nav-link {
+    font-size: 70%;
+    padding: 10px 7px 10px 7px;
+  }
+
+  .contact-list-item {
+    display: inline-block;
+    margin: 4px 4px 5px 4px;
+  }
+
+  /* repositions the nav bar in the header to help fill the space created by a wider viewport */
+  .nav {
+    font-size: 28px;
+    position: absolute;
+    top: 48px;
+    right: 12px;
+  }
+
+  /* height increase due to higher resolution */
+  #title {
+    height: 125px;
+  }
+
+  /* size increase due to higher resolution */
+  #title section h2 {
+    font-size: 36px;
+  }
+
+  /* increased font size due to higher resolution in this breakpoint */
+  #aboutMe article p {
+    font-size: 20px;
+  }
+
+  .work-card h3 {
+    font-size: 25px;
+  }
+
+  .big-card h3 {
+    font-size: 36px;
+  }
+  .work-card h4 {
+    font-size: 20px;
+  }
+
+  .big-card h4 {
+    font-size: 30px;
+  }
+
+  /* changed space between cards to reflect the increase in resolution */
+  .small-card {
+    flex: 0 0 calc(50% - 10px);
+    margin-top: 20px;
+  }
+}
+
+@media only screen and (min-width: 995px) {
+  /* these next few blocks rearrange the headings of the content to the left side and formats them to reflect that */
+  .flex-container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .content-header {
+    flex: 0 0 15%;
+    border-bottom: none;
+    border-right: solid #08094d 4px;
+  }
+
+  .content-header h2 {
+    font-size: 32px;
+    text-align: end;
+    margin-right: 15px;
+  }
+
+  .content-section {
+    flex: 0 0 83%;
+    margin-bottom: 15px;
+  }
+}
+
+@media only screen and (min-width: 1100px) {
+  .nav-link {
+    font-size: 100%;
+    padding: 4px 10px 4px 10px;
+  }
+  .nav-item {
+    margin: 0 1px;
+  }
+}
+
+.mapbox {
+  height: 300px;
+  border-radius: 18px;
+  position: relative;
+  width: 100%;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  border: 1px solid ;
+  overflow: hidden;
+}
+.mapbox figure {
+  height: 100%;
+}
+
+.mapbox iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+#imgLogo {
+  height: 175px;
+  border: 3px solid transparent;
+  background-color: #08094d;
+  aspect-ratio: 3/4;
+}
+
+
+
+.boxes {
+  margin: 150px auto;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.box {
+  position: relative;
+  margin: 16px;
+  height: 200px;
+  width: 300px;
+  border-radius: 16px;
+  border: 1px solid;
+}
+
+.titleP {
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 22px;
+}
+.imgSkill {
+  height: 250px;
+  border: 3px solid transparent;
+  background-color: #08094d;
+  aspect-ratio: 3/4;
+}
+
+.selectI8n{
+  float: right;
+  width: 138px;
+  font-size: 28px;
+  position: absolute;
+  top: 10px;
+  right: 35px;
+}
