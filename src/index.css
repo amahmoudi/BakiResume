@@ -26,7 +26,6 @@ body {
   background-color: var(--main-bg-color);
 }
 
-/* repositions and styles the top heading */
 #headerClass h1 {
   font-size: 30px;
   padding: 3px 15px 3px 20px;
@@ -86,7 +85,6 @@ body {
   background-color: rgb(55, 44, 44);
 }
 
-/* this code repositions and styles the heading that's layered over the title image */
 #title section {
   display: flex;
   justify-content: flex-start;
@@ -104,14 +102,12 @@ body {
   padding: 0;
 }
 
-/* decided to make a breakpoint for this because the subtitle was a little too long for smaller resolutions */
 @media only screen and (min-width: 400px) {
   #title section h2 {
     font-size: 24px;
   }
 }
 
-/* used the calc function with width to produce a margin that looks decent through multiple breakpoints */
 .flex-container {
   margin: 10px 20px 20px 20px;
   width: calc(100% - 40px);
@@ -130,7 +126,8 @@ body {
 .logo {
   height: 50px;
 }
-/* this code enables the p element to wrap around the image */
+
+
 #aboutMe article p {
   text-align: justify;
   margin: auto 0 auto 0;
@@ -143,21 +140,6 @@ body {
   background-color: #08094d;
   aspect-ratio: 3/4;
 }
-
-/* used the flex display property to help arrange my work cards */
-#work-card-container {
-  display: flex;
-  justify-content: space-between;
-  flex-flow: row wrap;
-  align-items: flex-start;
-}
-
-.work-card {
-  position: relative;
-  aspect-ratio: 7/3;
-}
-
-/* hover pseudo-class used to darken the work cards */
 .hover-container:hover,
 .repo-link:hover {
   filter: brightness(50%);
@@ -165,23 +147,10 @@ body {
   cursor: pointer;
 }
 
-.big-card {
-  width: 100%;
-  flex: 0 0 100%;
-}
-
-.small-card {
-  /* this vertically spaces the work cards from each other */
-  margin-top: 10px;
-  /* this will be modified in a breakpoint later to produce smaller cards at higher resolutions */
-  flex: 0 0 100%;
-}
-
 .tech-div {
   max-width: 75%;
 }
 
-/* repositions and styles the headings to layer them on top of the cards */
 .deployed-link {
   display: block;
   border: 3px solid #08094d;
@@ -220,16 +189,6 @@ body {
   margin: 0;
 }
 
-.work-card h3 {
-  padding: 8px;
-  font-size: 15px;
-}
-
-.work-card h4 {
-  padding: 3px;
-  font-size: 12px;
-}
-
 .contact-anchor {
   color: #08094d;
   text-decoration: none;
@@ -255,16 +214,14 @@ body {
 }
 
 @media only screen and (min-width: 769px) {
-  /* increased size of header to reflect a larger viewport */
   #headerClass {
     height: 100px;
   }
 
-  /* increase font size to reflect larger viewport */
   #headerClass h1 {
     font-size: 30px;
   }
-  /* hides the nav bar background */
+
   #navbar {
     height: 0;
     margin: 0;
@@ -282,7 +239,6 @@ body {
     margin: 4px 4px 5px 4px;
   }
 
-  /* repositions the nav bar in the header to help fill the space created by a wider viewport */
   .nav {
     font-size: 28px;
     position: absolute;
@@ -290,45 +246,21 @@ body {
     right: 12px;
   }
 
-  /* height increase due to higher resolution */
   #title {
     height: 125px;
   }
 
-  /* size increase due to higher resolution */
   #title section h2 {
     font-size: 36px;
   }
 
-  /* increased font size due to higher resolution in this breakpoint */
   #aboutMe article p {
     font-size: 20px;
-  }
-
-  .work-card h3 {
-    font-size: 25px;
-  }
-
-  .big-card h3 {
-    font-size: 36px;
-  }
-  .work-card h4 {
-    font-size: 20px;
-  }
-
-  .big-card h4 {
-    font-size: 30px;
-  }
-
-  /* changed space between cards to reflect the increase in resolution */
-  .small-card {
-    flex: 0 0 calc(50% - 10px);
-    margin-top: 20px;
   }
 }
 
 @media only screen and (min-width: 995px) {
-  /* these next few blocks rearrange the headings of the content to the left side and formats them to reflect that */
+
   .flex-container {
     display: flex;
     justify-content: space-between;
