@@ -13,7 +13,7 @@ function Box({ project }) {
             animationOut="zoomOut"
         >
             <div className="box" style={{backgroundImage: `url(${project.InProd ? project.image : lodingImg})`,
-                backgroundRepeat: 'no-repeat', width: '300px', height: '290px',backgroundSize: 'cover'}}>
+                backgroundRepeat: 'no-repeat', width: '230px', height: '135px',backgroundSize: 'cover'}}>
                 <div className="center titleP">{project.title}</div>
                 {project.InProd && <button className="bottom-corner" onClick={() => {
                     window.open(project.url, "_blank");

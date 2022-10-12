@@ -41,18 +41,16 @@ const contactArray = [
 export default function Contact() {
     const { t } = useTranslation();
     return (
-        <article>
-        <header>
-            <h2 className="h2 article-title">{t('contactMe')}</h2>
-        </header>
-            <Map/>
-
         <section className="flex-container " id="contacts">
+            <header className="content-header">
+                <h2 className="h2 article-title">{t('contactMe')}</h2>
+                <Map/>
+            </header>
             <address className="content-section d-flex flex-column flex-sm-row justify-content-between align-items-center">
                 <div className="d-inline-block w-100 h-100">
-                    <h2 className="mb-2">
+                    <h6 className="mb-2">
                         {t('contactMeMsg')}
-                    </h2>
+                    </h6>
                     <ul className="p-4 d-flex">
                         {contactArray.map((contact) => (
                             <li
@@ -74,6 +72,5 @@ export default function Contact() {
                 </div>
             </address>
         </section>
-        </article>
     );
 }
