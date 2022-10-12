@@ -3,11 +3,8 @@
   --main-bg-color: #3269a8;
   --secondary-bg-color: #f5f3f0;
   --main-bg-text-color: #383632;
-}
-
-* {
-  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
-  "Lucida Sans", Arial, sans-serif;
+  font-style: italic;
+  font-family: none;
 }
 
 body {
