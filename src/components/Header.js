@@ -6,6 +6,7 @@ export default function Header() {
     return (
         <div>
             <header id="headerClass">
+                <h6>V{config.VERSION}</h6>
                 <img
                     src={"./img/logo.jpg"}
                     alt="Abdel Baki"
@@ -15,7 +16,6 @@ export default function Header() {
             </header>
             <Navigation />
             <figure id="headerClass" >
-                <h4> Version {config.VERSION}</h4>
             </figure>
         </div>
     );
