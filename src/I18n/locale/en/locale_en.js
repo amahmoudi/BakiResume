@@ -2,9 +2,9 @@ const locale_en ={
     "welcome": "Hi All ",
     "iam": "I'm",
     "nom": "Abdelbaki",
-    "titleProfile": "Devops Engineer",
+    "titleProfile": "Full Stack Developer/Devops/Cloud Aws Engineer",
     "msgAcc1": "Nice to see you here!",
-    "msgAcc2": "I am a computer engineer specializing in the study and development of computer systems.",
+    "msgAcc2": "I am a Lead Developer/DevOps/Cloud Aws.",
     "skill": "Skills",
     "listProjects": "List of projects",
     "presentation": "Hey, My name is Mahmoudi Abdelbaki. I'm 34 years old. I am a computer engineer specializing \n" +
