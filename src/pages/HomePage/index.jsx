@@ -32,7 +32,7 @@ export default function HomePage() {
                     <img alt= "" className="imgSkill" src={"./img/methode-agile.jpg"} />
                 </BounceInDiv>
                 <BounceInDiv>
-                    <img alt= "" className="imgSkill" src={"./img/Scrum.jpg"} />
+                    <img alt= "" className="imgSkill" src={"./img/aws.jpg"} />
                 </BounceInDiv>
             </div>
             <div className="col-2">
