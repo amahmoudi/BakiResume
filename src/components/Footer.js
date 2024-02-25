@@ -42,7 +42,7 @@ export default function Footer() {
                 </section>
             </div>
             <div className="text-center p-3 copyright">
-                © 2022 Copyright: Abdelbaki Mahmoudi
+                © 2024 Copyright: Abdelbaki Mahmoudi
             </div>
         </footer>
     );

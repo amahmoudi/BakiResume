@@ -7,6 +7,10 @@ const navList = [
         linkText: "Home",
     },
     {
+		href:"/Certif",
+		linkText: "Certifications",
+	},
+    {
         href: "/projects",
         linkText: "Projects",
     },

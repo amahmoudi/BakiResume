@@ -9,6 +9,7 @@ import LanguageSwitcher from "./components/LanguageSwitcher";
 import data from './resumeData';
 // import i18n (needs to be bundled ;))
 import './I18n/i18n';
+import Certif from "./pages/Certif";
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
             <Header />
                 <Routes>
                     <Route exact path="/" element={<Homepage />} />
+                    <Route exact path="/Certif" element={<Certif />} />
                     <Route path="/projects" element={<Projects data={data.projectsList} />} />
                     <Route path="/aboutus" element={<Aboutus />} />
                     <Route path="/contactus" element={<Contact />} />
