@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { useTranslation } from 'react-i18next';
+import PDFViewer from "../../components/PDFViewer";
 
 export default function Aboutus() {
     const { t } = useTranslation();
@@ -19,6 +20,7 @@ export default function Aboutus() {
                 <p>
                     {t('presentation')}
                     <Link to="/contactus">{t('contactMe')}</Link>.
+                    <PDFViewer />
                 </p>
             </article>
         </section>

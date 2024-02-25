@@ -7,12 +7,7 @@ export default function Header() {
         <div>
             <header id="headerClass">
                 <h6>V{config.VERSION}</h6>
-                <img
-                    src={"./img/logo.jpg"}
-                    alt="Abdel Baki"
-                    id="imgLogo"
-                    className="float-end ms-3 rounded"
-                />
+               <img src={"./img/logo.jpg"} alt="Abdel Baki" id="imgLogo" className="float-end ms-3 rounded" hidden/> 
             </header>
             <Navigation />
             <figure id="headerClass" >

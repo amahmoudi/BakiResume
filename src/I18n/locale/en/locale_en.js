@@ -4,10 +4,10 @@ const locale_en ={
     "nom": "Abdelbaki",
     "titleProfile": "Full Stack Developer/Devops/Cloud Aws Engineer",
     "msgAcc1": "Nice to see you here!",
-    "msgAcc2": "I am a Lead Developer/DevOps/Cloud Aws.",
+    "msgAcc2": "📫 How to contact me: you can send me an email to discuss",
     "skill": "Skills",
     "listProjects": "List of projects",
-    "presentation": "Hey, My name is Mahmoudi Abdelbaki. I'm 34 years old. I am a computer engineer specializing \n" +
+    "presentation": "Hey, My name is Mahmoudi Abdelbaki. I'm 36 years old. I am a computer engineer specializing \n" +
     "in the design and development of computer systems. I am currently working as an engineer. \n" +
     "I am very proud of all my career, I have many things and dreams to do in the future. \n" +
     " Want to ask me a question?",
@@ -18,7 +18,9 @@ const locale_en ={
     "About Me": "About Me",
     "Contact Me": "Contact Me",
     "Email": "E-mail",
-    "Phone":"Phone"
+    "Phone":"Phone",
+    "badges":"Badges",
+    "certifications":"Certifications"
 }
 
 export default locale_en;

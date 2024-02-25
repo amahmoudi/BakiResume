@@ -2,6 +2,8 @@ import React from "react";
 import { bounceIn } from 'react-animations';
 import styled, { keyframes } from "styled-components";
 import { useTranslation } from 'react-i18next';
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 
 const BounceInAnimation = keyframes`${bounceIn}`;
@@ -14,15 +16,27 @@ export default function HomePage() {
     return (
         <section className="flex-container" id="aboutMe">
         <header className="content-header">
-        <h2> {t('welcome')}</h2>
+        <h6> {t('welcome')}</h6>
         <h2> {t('iam')}   {t('nom')} </h2>
-         <h4> {t('titleProfile')}</h4>
-         <h6>
+        <h6> {t('titleProfile')}</h6>
+        <h6>
              {t('msgAcc1')}
+        </h6>
+        <h6>
+             {t('msgAcc2')} 
+             <a
+                                key={'Email'}
+                                rel="noreferrer"
+                                target="_blank"
+                                className="btn btn-primary btn-floating m-1 contact-link"
+                                href={'mailto:abdelbaki.mahmoudi@gmail.com'}
+                                role="button"
+                                data-tip={t('Email')}
+                            >
+                                <FontAwesomeIcon icon={faEnvelope} />
+                            </a>
          </h6>
-         <h6>
-             {t('msgAcc2')}
-         </h6>
+          
         </header>
     <article className="content-section">
         <h1> {t('skill')} :</h1>
