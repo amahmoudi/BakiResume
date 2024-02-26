@@ -2,8 +2,6 @@ import React from "react";
 import { bounceIn } from 'react-animations';
 import styled, { keyframes } from "styled-components";
 import { useTranslation } from 'react-i18next';
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
 
 const BounceInAnimation = keyframes`${bounceIn}`;
