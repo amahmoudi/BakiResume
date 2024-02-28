@@ -4,6 +4,7 @@ import styled, { keyframes } from "styled-components";
 import { useTranslation } from 'react-i18next';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import {isMobile} from 'react-device-detect';
 
 
 const BounceInAnimation = keyframes`${bounceIn}`;
@@ -40,7 +41,8 @@ export default function HomePage() {
         </header>
     <article className="content-section">
         <h1> {t('skill')} :</h1>
-        <div className="row">
+        
+        !isMobile && <div id ="browserdiv" className="row">
             <div className="col-2">
                 <BounceInDiv>
                     <img alt= "" className="imgSkill" src={"./img/methode-agile.jpg"} />
@@ -82,6 +84,57 @@ export default function HomePage() {
                 </BounceInDiv>
             </div>
             <div className="col-2">
+                <BounceInDiv>
+                    <img alt= ""  className="imgSkill" src={"./img/angular.jpg"} />
+                </BounceInDiv>
+                <BounceInDiv>
+                    <img alt= "" className="imgSkill" src={"./img/node.jpg"} />
+                </BounceInDiv>
+            </div>
+        </div>
+		
+		isMobile && <div id ="mobilediv" className="row">
+            <div className="col-4">
+                <BounceInDiv>
+                    <img alt= "" className="imgSkill" src={"./img/methode-agile.jpg"} />
+                </BounceInDiv>
+                <BounceInDiv>
+                    <img alt= "" className="imgSkill" src={"./img/aws.jpg"} />
+                </BounceInDiv>
+            </div>
+            <div className="col-4">
+            <BounceInDiv>
+                <img alt= "" className="imgSkill" src={"./img/DevOps.jpg"} />
+            </BounceInDiv>
+            <BounceInDiv>
+                <img alt= "" className="imgSkill" src={"./img/js.jpg"} />
+            </BounceInDiv>
+            </div>
+            <div className="col-4">
+                <BounceInDiv>
+                    <img alt= "" className="imgSkill" src={"./img/React.jpg"} />
+                </BounceInDiv>
+                <BounceInDiv>
+                    <img alt= "" className="imgSkill" src={"./img/Base-de-donnees.jpg"} />
+                </BounceInDiv>
+            </div>
+            <div className="col-4">
+                <BounceInDiv>
+                    <img alt= ""  className="imgSkill" src={"./img/Java.jpg"} />
+                </BounceInDiv>
+                <BounceInDiv>
+                    <img alt= "" className="imgSkill" src={"./img/css-banner.jpg"} />
+                </BounceInDiv>
+            </div>
+            <div className="col-4">
+                <BounceInDiv>
+                    <img alt= "" className="imgSkill" src={"./img/spring.jpg"} />
+                </BounceInDiv>
+                <BounceInDiv>
+                    <img alt= ""  className="imgSkill" src={"./img/sql.jpg"} />
+                </BounceInDiv>
+            </div>
+            <div className="col-4">
                 <BounceInDiv>
                     <img alt= ""  className="imgSkill" src={"./img/angular.jpg"} />
                 </BounceInDiv>
