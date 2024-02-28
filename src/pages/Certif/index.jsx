@@ -2,6 +2,7 @@ import React from "react";
 import { bounceIn } from 'react-animations';
 import styled, { keyframes } from "styled-components";
 import { useTranslation } from 'react-i18next';
+import {isMobile} from 'react-device-detect';
 
 
 const BounceInAnimation = keyframes`${bounceIn}`;
@@ -18,7 +19,7 @@ export default function Certif() {
         </header>
     <article className="content-section">
         <h1> {t('certifications')} :</h1>
-        <div className="row">
+        {!isMobile && <div id="browserCertifId" className="row">
             <div className="col-2">
                 <BounceInDiv>
                     <img alt= "" className="imgSkill" src={"./img/OracleCertif.png"} />
@@ -29,7 +30,20 @@ export default function Certif() {
                 <img alt= "" className="imgSkill" src={"./img/AwsCertif.png"} />
             </BounceInDiv>           
             </div>       
-        </div>
+        </div> }
+        {isMobile && <div id="mobileCertifId" className="row">
+            <div className="col-4">
+                <BounceInDiv>
+                    <img alt= "" className="imgSkill" src={"./img/OracleCertif.png"} />
+                </BounceInDiv>             
+            </div>
+            <div className="col-4">
+            <BounceInDiv>
+                <img alt= "" className="imgSkill" src={"./img/AwsCertif.png"} />
+            </BounceInDiv>           
+            </div>       
+        </div> }
+        
 
     </article>
     </section>
