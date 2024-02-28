@@ -42,7 +42,7 @@ export default function HomePage() {
     <article className="content-section">
         <h1> {t('skill')} :</h1>
         
-        !isMobile && <div id ="browserdiv" className="row">
+        {!isMobile && <div id ="browserdiv" className="row">
             <div className="col-2">
                 <BounceInDiv>
                     <img alt= "" className="imgSkill" src={"./img/methode-agile.jpg"} />
@@ -91,9 +91,9 @@ export default function HomePage() {
                     <img alt= "" className="imgSkill" src={"./img/node.jpg"} />
                 </BounceInDiv>
             </div>
-        </div>
+        </div> }
 		
-		isMobile && <div id ="mobilediv" className="row">
+		{isMobile && <div id ="mobilediv" className="row">
             <div className="col-4">
                 <BounceInDiv>
                     <img alt= "" className="imgSkill" src={"./img/methode-agile.jpg"} />
@@ -142,7 +142,7 @@ export default function HomePage() {
                     <img alt= "" className="imgSkill" src={"./img/node.jpg"} />
                 </BounceInDiv>
             </div>
-        </div>
+        </div> }
 
     </article>
     </section>
