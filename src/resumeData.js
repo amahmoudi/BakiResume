@@ -2,11 +2,11 @@ const Data = {
     projectsList: [
         {
             "category": "Web",
-            "description": "Full-Stack Dev of React.js-Node.js",
+            "description": "My self coded personal website build with React & Aws",
             "InProd": true,
             "image": `./img/perso.jpg`,
             "title": "Site Personal",
-            "url": "https://github.com/amahmoudi/BakiPersonalSite"
+            "url": "https://github.com/amahmoudi/BakiResume"
         },
         {
             "category": "Web",

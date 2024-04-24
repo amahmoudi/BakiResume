@@ -13,7 +13,7 @@ const locale_fr ={
     "Vous voulez me poser une question ?",
     "contactMe": "Contactez moi",
     "contactMeMsg": "Vous pouvez m'appeler, m'envoyer un SMS ou m'envoyer un e-mail s'il y a quelque chose dont vous aimeriez discuter !",
-    "Home":"Acceuil",
+    "Home":"Accueil",
     "Projects": "Projets",
     "About Me": "Présentation",
     "Contact Me": "Contact",
